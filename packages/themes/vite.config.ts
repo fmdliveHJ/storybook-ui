@@ -7,8 +7,11 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       name: 'themes',
-      fileName: (format) => `themes.${format}.js`,
+      fileName: () => `index.js`,
+      formats: ['es'],
     },
+    minify: true,
+    sourcemap: true,
     rollupOptions: {
       external: ['react', 'react-dom'],
     },
