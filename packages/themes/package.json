@@ -2,13 +2,20 @@
   "name": "@packages/themes",
   "type": "module",
   "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm clean && pnpm build:js && pnpm build:type && pnpm build:css",
     "build:js": "vite build",
     "build:type": "tsc --declaration --emitDeclarationOnly --outDir dist/",
-    "build:css": "node script/build-css-module.js"
+    "build:css": "node script/build-css-module.js",
+    "theme.css": "./dist/theme.css"
   },
   "devDependencies": {
     "@storybook/builder-vite": "^8.6.12",
