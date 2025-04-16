@@ -11,7 +11,7 @@ GitHub Pages를 통해 Storybook을 배포합니다.
 - **UI Libary/Framework:** React
 - **Styling:** css
 - **Bundler:** Vite
-- **Build System / Monorepo:** Nx
+- **Build System / Monorepo:** Turbo Repo
 - **Deployment:** Vercel
 
 ---
