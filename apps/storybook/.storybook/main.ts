@@ -1,6 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { join, dirname } from 'path';
-import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+
 import { mergeConfig } from 'vite';
 
 function getAbsolutePath(value: string): string {
@@ -21,11 +21,7 @@ const config: StorybookConfig = {
   },
   viteFinal: async (config) => {
     return mergeConfig(config, {
-      plugins: [
-        vanillaExtractPlugin({
-          identifiers: 'short',
-        }),
-      ],
+      plugins: [],
       optimizeDeps: {
         include: ['@packages/themes', '@ui/layout'],
       },

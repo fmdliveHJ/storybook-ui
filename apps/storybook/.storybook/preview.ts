@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react';
-import '@packages/themes/dist/themes.css';
+import '@packages/themes/themes.css';
 import './style.css';
 const preview: Preview = {
   parameters: {
@@ -10,23 +10,23 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    rootAttributesTooltip: true,
-    rootAttributes: [
-      {
-        root: 'body',
-        attribute: 'class',
-        defaultState: {
-          name: 'light',
-          value: 'theme-light',
-        },
-        states: [
-          {
-            name: 'dark',
-            value: 'theme-dark',
-          },
-        ],
-      },
-    ],
+    // rootAttributesTooltip: true,
+    // rootAttributes: [
+    //   {
+    //     root: 'body',
+    //     attribute: 'class',
+    //     defaultState: {
+    //       name: 'light',
+    //       value: 'theme-light',
+    //     },
+    //     states: [
+    //       {
+    //         name: 'dark',
+    //         value: 'theme-dark',
+    //       },
+    //     ],
+    //   },
+    // ],
   },
 };
 
