@@ -13,6 +13,7 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-onboarding'),
     getAbsolutePath('@chromatic-com/storybook'),
+    getAbsolutePath('storybook-addon-root-attributes'),
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
@@ -20,7 +21,14 @@ const config: StorybookConfig = {
   },
   viteFinal: async (config) => {
     return mergeConfig(config, {
-      plugins: [vanillaExtractPlugin()],
+      plugins: [
+        vanillaExtractPlugin({
+          identifiers: 'short',
+        }),
+      ],
+      optimizeDeps: {
+        include: ['@packages/themes', '@ui/layout'],
+      },
     });
   },
 };

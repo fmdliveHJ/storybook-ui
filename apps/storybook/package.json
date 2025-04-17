@@ -15,7 +15,8 @@
     "@packages/themes": "workspace:^",
     "@ui/layout": "workspace:^",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "storybook-addon-root-attributes": "^2.1.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
