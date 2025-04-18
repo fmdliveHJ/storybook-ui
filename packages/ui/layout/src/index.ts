@@ -1,2 +1,2 @@
-export { Box, Layout } from './layouts';
-export type { BoxProps } from './layouts';
+export { Box, Flex, Grid, GridItem } from './layouts';
+export { Text } from './typography';
