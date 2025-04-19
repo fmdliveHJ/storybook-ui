@@ -158,3 +158,13 @@ export const pink = {
   800: '#702459',
   900: '#521B41',
 };
+
+export const pointColor = {
+  primary: '#0365DC',
+  secondary: '#1E74E3',
+  tertiary: '#44B149',
+  accent: '#A435F0',
+  success: '#008000',
+  warning: '#FFA500',
+  error: '#FF0000',
+};
