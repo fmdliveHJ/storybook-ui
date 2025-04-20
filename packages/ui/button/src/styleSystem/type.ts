@@ -15,12 +15,13 @@ export type BaseProps = {
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
   BaseProps & {
-    as?: keyof JSX.IntrinsicElements;
     children?: React.ReactNode;
     color?: string;
     size?: 'xs' | 'sm' | 'md' | 'lg';
-    isDisabled?: boolean;
+    disabled?: boolean;
     isLoading?: boolean;
     leftIcon?: React.ReactNode;
     rightIcon?: React.ReactNode;
+    variant?: 'solid' | 'outline' | 'ghost';
+    onKeyDown?: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
   };

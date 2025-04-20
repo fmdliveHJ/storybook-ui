@@ -167,4 +167,12 @@ export const pointColor = {
   success: '#008000',
   warning: '#FFA500',
   error: '#FF0000',
+  primaryHover: '#055ac2',
+  primaryActive: '#034a9e',
+  secondaryHover: '#2081ff',
+  secondaryActive: '#1e74e3',
+  tertiaryHover: '#44b149',
+  tertiaryActive: '#38943e',
+  accentHover: '#a435f0',
+  accentActive: '#8c2ed6',
 };

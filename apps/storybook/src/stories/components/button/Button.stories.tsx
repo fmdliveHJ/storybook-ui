@@ -41,8 +41,10 @@ export default {
 
 export const ButtonStory = {
   args: {
-    as: 'button',
     children: 'Button!',
-    bg: 'blue-50',
+    bg: 'primary',
+    disabled: false,
+    isLoading: false,
+    leftIcon: '👆',
   },
 };
