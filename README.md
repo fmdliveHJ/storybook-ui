@@ -22,7 +22,19 @@ GitHub Pages를 통해 Storybook을 배포합니다.
 pnpm install
 pnpm dev
 
-vercel --prod
+
+```
+
+#Start Storybook
+
+```shell
+pnpm run storybook
+```
+
+#Turbo run
+
+```shell
+pnpm turbo run build
 ```
 
 ## 커밋 규칙
